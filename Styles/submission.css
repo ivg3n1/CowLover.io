@@ -1,0 +1,162 @@
+body {
+  background-image: url("https://img.freepik.com/free-photo/top-view-meat-with-tomatoes-herbs_23-2148611092.jpg?w=740&t=st=1693574654~exp=1693575254~hmac=47abfac92b087fbad4f30803cc7a6c103d313896a7a24a4e9f2c16b81b1023f5");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  margin: 0px 0px 0px 0px;
+
+  text-align: center;
+}
+
+body.scrollable {
+  overflow: scroll;
+}
+
+body.unscrollable {
+  overflow: hidden;
+}
+
+.head {
+  color: rgb(253, 253, 253);
+  position: relative;
+  top: 15%;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: 62px;
+  font-weight: 800;
+  line-height: 72px;
+  margin: 0 0 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+div.submission {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.instructions {
+  position: relative;
+  background-color: rgba(173, 175, 175, 0.481);
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px rgba(8, 8, 8, 0.904);
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+li {
+  transform: scale(100%);
+  text-align: center;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+p {
+  transform: scale(100%);
+  text-align: center;
+  font-weight: bold;
+  color: rgb(212, 211, 211);
+}
+
+p.finalSteps {
+  color: #000000;
+}
+
+input.submit {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 500px;
+  transform: translate(-12px, 0px);
+}
+
+.btn {
+  position: relative;
+  margin-top: 15px;
+}
+
+input.btn {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 500px;
+  transition-property: background-color, border-color, color, box-shadow, filter;
+  transition-duration: 0.3s;
+  border: 1px solid transparent;
+  letter-spacing: 2px;
+  min-width: 160px;
+  text-transform: uppercase;
+  white-space: normal;
+  font-weight: 700;
+  text-align: center;
+  padding: 16px 14px 18px;
+  color: #fff;
+  background-color: #696969;
+  box-shadow: 0px 0px 5px #ffffff;
+  height: 48px;
+}
+input.btn:hover {
+  background-color: #a2a3a2;
+  box-shadow: 0px 0px 5px #000000;
+}
+div.popUp {
+  position: absolute;
+  background-color: rgba(81, 83, 83, 0.555);
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  animation-name: pop;
+  animation-duration: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+div.popDown {
+  display: none;
+}
+@keyframes pop {
+  0% {
+    background-color: rgba(81, 83, 83, 0);
+  }
+  50% {
+    background-color: rgba(81, 83, 83, 0.089);
+  }
+  100% {
+    background-color: rgba(81, 83, 83, 0.555);
+  }
+}
+
+div.box {
+  background-color: rgb(245, 245, 245);
+  border: 5px outset whitesmoke;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 10px rgb(116, 115, 115);
+  width: 500px;
+  height: 500px;
+  z-index: 11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+input.mail {
+  margin-top: 50px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-right: 3px;
+  margin-bottom: 10px;
+}
